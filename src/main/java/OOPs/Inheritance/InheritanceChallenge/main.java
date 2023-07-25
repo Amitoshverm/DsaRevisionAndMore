@@ -11,5 +11,16 @@ public class main {
         System.out.println(shreya);
         System.out.println("age" + shreya.getAge());
         System.out.println("pay" + shreya.collectPay());
+
+        SalariedEmployee joe = new SalariedEmployee("joe", "02/12/1992", "19/09/2021", 3400000);
+        System.out.println(joe);
+        System.out.println(joe.collectPay());
+        joe.retire();
+        System.out.println(joe.collectPay());
+
+        HourlyEmployee mary = new HourlyEmployee("mary", "13/01/2002","11/02/2020", 15);
+        System.out.println(mary);
+        System.out.println("marry's pay check = "+ mary.collectPay());
+        System.out.println("marry's holiday pay = "+ mary.getDoublePay());
     }
 }
