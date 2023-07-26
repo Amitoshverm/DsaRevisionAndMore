@@ -22,5 +22,7 @@ public class main {
         System.out.println(mary);
         System.out.println("marry's pay check = "+ mary.collectPay());
         System.out.println("marry's holiday pay = "+ mary.getDoublePay());
+
+        System.out.println(mary.getAge());
     }
 }
