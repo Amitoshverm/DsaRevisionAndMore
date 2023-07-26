@@ -27,10 +27,11 @@ public class main {
         System.out.println(stringBuilder);
 
         str.concat("and GoodBye");
-        stringBuilder.append("and GoodBye");
+        stringBuilder.append(" and GoodBye");
         System.out.println(str);
         System.out.println(stringBuilder);
 
-
+        stringBuilder.deleteCharAt(16).insert(16, 'g');
+        System.out.println(stringBuilder);
     }
 }
