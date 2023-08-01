@@ -13,7 +13,27 @@ public class EnhancedPlayer {
 
     public EnhancedPlayer(String playerName, int health, String weapon) {
         this.playerName = playerName;
-        this.health = health;
+        if(health <= 0) {
+            this.health = 1;
+        } else if (health >= 100) {
+            this.health = 100;
+        } else {
+            this.health =health;
+        }
         this.weapon = weapon;
     }
+    public void healthAfterAttack(int damage) {
+        health -= damage;
+    }
+    public int remainingHealth() {
+        return health;
+    }
+
+    public void restoreHealth(int foundHealth) {
+        health += foundHealth;
+        if (health > 100){
+            health = 100;
+        }
+    }
+
 }
