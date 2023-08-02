@@ -17,16 +17,25 @@ public class main {
 //        String title = in.nextLine();
 //        Movie movie = Movie.getMovie(type, title);
 //        movie.watchMovie();
-        while (true) {
-            System.out.print("Enter the following for the genre- A for adventure, C for comedy, S for scifi and Q for quit : ");
-            String type = in.nextLine();
-            if ("Qq".contains(type)) {
-                break;
-            }
-            System.out.print("enter Movie title: ");
-            String title = in.nextLine();
-            Movie movie = Movie.getMovie(type, title);
-            movie.watchMovie();
+//        while (true) {
+//            System.out.print("Enter the following for the genre- A for adventure, C for comedy, S for scifi and Q for quit : ");
+//            String type = in.nextLine();
+//            if ("Qq".contains(type)) {
+//                break;
+//            }
+//            System.out.print("enter Movie title: ");
+//            String title = in.nextLine();
+//            Movie movie = Movie.getMovie(type, title);
+//            movie.watchMovie();
+//        }
+        Object unknownObject = Movie.getMovie("S", "Interstellar");
+        if (unknownObject.getClass().getSimpleName().equals("Comedy")) {
+            Comedy c = (Comedy) unknownObject;
+            c.watchMovie();
+        } else if (unknownObject instanceof Adventure) {
+            ((Adventure) unknownObject).watchMovie();
+        } else if (unknownObject instanceof Scifi syfi) {
+            syfi.watchMovie();
         }
 
     }
