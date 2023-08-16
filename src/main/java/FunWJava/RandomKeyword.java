@@ -11,7 +11,8 @@ public class RandomKeyword {
         * RANDOM
         * COPYOF
         * FILL
-        *
+        * BINARYSEARCH
+        * EQUALS
         * */
 
         int[] arr = RandomArray(10);
@@ -34,6 +35,23 @@ public class RandomKeyword {
 
         int[] arr6 = Arrays.copyOf(arr5, 10);
         System.out.println(Arrays.toString(arr6));
+
+        String[] str = {"messi", "ronaldo", "amitosh", "neymar", "pogba"};
+        Arrays.sort(str);
+        System.out.println(Arrays.toString(str));
+        if (Arrays.binarySearch(str, "amitosh") >= 0) {
+            System.out.println("found amitosh in the list with goats");
+        }
+
+        int[] A1 = {1, 2, 3, 4 ,5};
+        int[] A2 = {1, 2, 3, 4 ,5};
+        if (Arrays.equals(A1, A2)) {
+            System.out.println("both arrays are equal");
+        } else {
+            System.out.println("they aren't equal");
+        }
+
+
     }
     static int[] RandomArray(int length) {
         Random random = new Random();
