@@ -8,12 +8,8 @@ public class Two_D_Arrays {
                       {2, 4, 6, 12}};
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = arr.length-1; j >= 0; j--) {
-                if (i + j == arr.length-1) {
+            int j = arr.length - 1 - i;
                     System.out.print(arr[i][j]+ " ");
-                }
-            }
-
         }
     }
 }
