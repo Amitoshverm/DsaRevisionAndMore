@@ -1,2 +1,5 @@
-package UdemySetup;public enum Suit {
+package UdemySetup;
+
+public enum Suit {
+    CLUB, DIAMOND, HEART, SPADE
 }
