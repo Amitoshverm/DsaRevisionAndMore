@@ -1,9 +1,16 @@
 package Arrays;
 
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class WaterAccumulation {
     public static void main(String[] args) {
         int[] arr = {3, 5, 4, 7, 3, 6, 5, 4, 1, 2};
         System.out.println(solve(arr));
+
+
     }
 
     public static int solve(int[] arr) {
