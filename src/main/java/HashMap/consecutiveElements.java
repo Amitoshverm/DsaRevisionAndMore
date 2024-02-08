@@ -1,11 +1,13 @@
 package HashMap;
 
 import java.util.HashSet;
+import java.util.Stack;
 
 public class consecutiveElements {
     public static void main(String[] args) {
-        int[] arr = {-1, 8, 2, 3, 7, 1, 4, 9};
-        System.out.println(solve(arr));
+//        int[] arr = {-1, 8, 2, 3, 7, 1, 4, 9};
+      //  System.out.println(solve(arr));
+
     }
     public static int solve(int[] arr) {
         HashSet<Integer> set = new HashSet<>();
