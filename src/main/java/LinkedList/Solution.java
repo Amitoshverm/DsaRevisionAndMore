@@ -4,12 +4,13 @@ import java.util.LinkedList;
 
 public class Solution {
     public static void main(String[] args) {
-        ListNode h1 = new ListNode();
-        h1.add(1);
-        h1.add(2);
-        h1.add(24);
-        h1.add(1);
-        System.out.println(mid(h1));
+        ListNode h1 = new ListNode(1);
+        h1.next = new ListNode(2);
+        h1.next.next = new ListNode(3);;
+        h1.next.next.next = new ListNode(4);;
+        h1.next.next.next.next = new ListNode(5);;
+
+        System.out.println(mid(h1).val);
 
 
     }
@@ -17,7 +18,7 @@ public class Solution {
     public static ListNode mid(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
-        while (fast.next != null || fast.next.next != null) {
+        while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
@@ -33,7 +34,7 @@ public class Solution {
         }
 
         ListNode fast = head, slow = head;
-        while (fast.next != null || fast.next.next != null) {
+        while (fast.next != null && fast.next.next != null) {
             fast = fast.next.next;
             slow = slow.next;
         }

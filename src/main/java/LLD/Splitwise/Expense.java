@@ -1,2 +1,5 @@
-package LLD.Splitwise;public class Expense {
+package LLD.Splitwise;
+
+public class Expense {
+
 }

@@ -2,7 +2,7 @@ package Trees;
 
 import java.util.Scanner;
 
-public class BinaryTree {
+public class TreeNode {
 
     private static class Node{
         int val;
@@ -58,7 +58,7 @@ public class BinaryTree {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        BinaryTree tree = new BinaryTree();
+        TreeNode tree = new TreeNode();
         tree.populate(scanner);
         tree.display();
 

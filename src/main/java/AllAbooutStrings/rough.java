@@ -1,2 +1,5 @@
-package AllAbooutStrings;public class rough {
+package AllAbooutStrings;
+
+public class rough {
+
 }

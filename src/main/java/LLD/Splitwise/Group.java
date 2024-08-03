@@ -1,2 +1,5 @@
-package LLD.Splitwise;public class Group {
+package LLD.Splitwise;
+
+public class Group {
+    private String name;
 }
